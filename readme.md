@@ -99,9 +99,6 @@ English.
 This add-on was built with the help of AI. I have tested it thoroughly in my own
 workflow, but I cannot guarantee support for it.
 
-Try a new version on a copy of an important document before trusting it with one
-that matters.
-
 ## Licence
 
 GNU General Public License version 2.
