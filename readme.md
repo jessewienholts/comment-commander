@@ -96,17 +96,11 @@ English.
 
 ## Support and how this was built
 
-This add-on was built with the help of AI. It has been tested thoroughly, but I
-cannot guarantee support for it.
+This add-on was built with the help of AI. I have tested it thoroughly in my own
+workflow, but I cannot guarantee support for it.
 
-Bug reports and pull requests are welcome — please open an issue. Treat a reply or
-a fix as a favour rather than a promise.
-
-To be precise about what "tested" means here: the add-on is covered by an
-extensive automated test suite that exercises the logic against a simulated Word
-and Excel object model. That catches a great deal, but it is not the same as
-years of use in the field. Try a new version on a copy of an important document
-before trusting it with one that matters.
+Try a new version on a copy of an important document before trusting it with one
+that matters.
 
 ## Licence
 
