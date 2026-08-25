@@ -21,7 +21,7 @@ addon_info = {
 	"addon_version": "2.0.0",
 	"addon_author": "Sensotec <support@sensotec.com>",
 	"addon_url": "https://www.sensotec.be",
-	"addon_sourceURL": "",
+	"addon_sourceURL": "https://github.com/jessewienholts/comment-commander",
 	"addon_docFileName": "readme.html",
 	"addon_minimumNVDAVersion": "2023.1",
 	"addon_lastTestedNVDAVersion": "2026.1",
