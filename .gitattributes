@@ -1,0 +1,4 @@
+# Keep the repository on LF regardless of who checks it out.
+* text=auto eol=lf
+*.png binary
+*.nvda-addon binary

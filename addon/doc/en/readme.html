@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Comment Commander</title>
+<style>
+body { font-family: Segoe UI, Verdana, sans-serif; margin: 2em auto; max-width: 50em; line-height: 1.5; padding: 0 1em; }
+table { border-collapse: collapse; margin: 1em 0; width: 100%; }
+th, td { border: 1px solid #888; padding: 0.4em 0.6em; text-align: left; vertical-align: top; }
+th { background: #eee; }
+kbd { border: 1px solid #999; border-radius: 3px; padding: 0 0.3em; background: #f6f6f6; }
+</style>
+</head>
+<body>
+<h1>Comment Commander</h1>
+
+<p>Comment Commander makes working with comments in Microsoft Word and Excel fast
+with NVDA. Instead of hunting through the comments pane, you get a searchable list
+of every comment, and one keypress takes you to the place it belongs to.</p>
+
+<p>In Excel, both kinds of annotation appear in the same list. Word tracked changes
+are supported in the same way.</p>
+
+<h2>Requirements</h2>
+<ul>
+<li>NVDA 2023.1 or later.</li>
+<li>Microsoft Word or Microsoft Excel (desktop). Word 2016 and later are
+recommended; resolving comments and replying to them require Word 2013 or later.
+Excel comment threads require Excel 2019 or Microsoft 365; classic notes work in
+any version.</li>
+</ul>
+
+<h2>Commands</h2>
+
+<table>
+<caption>Default keyboard commands</caption>
+<thead>
+<tr><th>Command</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><kbd>NVDA+shift+;</kbd></td><td>Open the list of comments.</td></tr>
+<tr><td><kbd>NVDA+;</kbd></td><td>Report the comment at the cursor, followed by the text it is attached to. Press twice to copy it to the clipboard.</td></tr>
+<tr><td><kbd>NVDA+alt+;</kbd></td><td>Move to the next comment.</td></tr>
+<tr><td><kbd>NVDA+alt+shift+;</kbd></td><td>Move to the previous comment.</td></tr>
+<tr><td><kbd>NVDA+control+;</kbd></td><td>Add a comment on the current selection, or on the active cell in Excel.</td></tr>
+<tr><td><kbd>NVDA+control+shift+;</kbd></td><td>Open the list of tracked changes. Word only.</td></tr>
+<tr><td>Unassigned</td><td>Report how many comments and tracked changes the document has.</td></tr>
+<tr><td>Unassigned</td><td>Open the Comment Commander settings.</td></tr>
+</tbody>
+</table>
+
+<p>All commands can be changed in NVDA's Input Gestures dialog, under the
+<em>Comment Commander</em> category.</p>
+
+<h3>Note for non-US keyboard layouts</h3>
+
+<p>NVDA works out which physical key the semicolon is on from your active keyboard
+layout, but it keeps only the key itself and not any shift the layout needs to
+produce the character. Which key you actually press therefore depends on your
+layout:</p>
+
+<table>
+<caption>Where the semicolon key lands</caption>
+<thead>
+<tr><th>Layout</th><th>Physical key</th></tr>
+</thead>
+<tbody>
+<tr><td>US, US International</td><td>The semicolon key, as printed.</td></tr>
+<tr><td>Belgian (period) and Belgian French AZERTY</td><td>The semicolon key, as printed.</td></tr>
+<tr><td>Dutch (Netherlands)</td><td>The comma key, because the semicolon sits on shift+comma there. <kbd>NVDA+shift+;</kbd> is therefore <kbd>NVDA+shift+comma</kbd>, which is the same thing you would press to type a semicolon anyway. <kbd>NVDA+;</kbd> is <kbd>NVDA+comma</kbd>.</td></tr>
+</tbody>
+</table>
+
+<p>All six commands stay distinct on each of these layouts, so nothing clashes. If
+your layout has no semicolon at all, or you simply prefer different keys, assign
+your own in Input Gestures; everything else works exactly the same.</p>
+
+<h2>The comments list</h2>
+
+<p>Press <kbd>NVDA+shift+;</kbd> in a Word document. The dialog opens with focus in
+the filter field, so the fastest route to any comment is: type a few words, press
+<kbd>down arrow</kbd> to move into the list, then <kbd>Enter</kbd>.</p>
+
+<p><kbd>Enter</kbd> on a comment closes the dialog and puts the Word cursor at the
+start of the text the comment is attached to, ready for you to read or edit.</p>
+
+<h3>Inside the dialog</h3>
+
+<table>
+<caption>Keys in the list dialogs</caption>
+<thead>
+<tr><th>Key</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><kbd>Enter</kbd></td><td>Go to the comment and close the dialog.</td></tr>
+<tr><td><kbd>down arrow</kbd> in the filter field</td><td>Move into the list.</td></tr>
+<tr><td><kbd>Backspace</kbd> in the list</td><td>Return to the filter field and delete the last character.</td></tr>
+<tr><td><kbd>Delete</kbd> in the list</td><td>Delete the selected comment (reject, in the tracked changes list).</td></tr>
+<tr><td><kbd>F2</kbd> in the list</td><td>Edit the text of the selected comment.</td></tr>
+<tr><td><kbd>Escape</kbd></td><td>Close without moving.</td></tr>
+</tbody>
+</table>
+
+<h3>What the list shows</h3>
+
+<p>Each row gives the number, author, comment text, the annotated text it refers
+to, the status, the number of replies, the page and the date. Replies appear
+directly under the comment they belong to and are labelled as replies, so a
+thread reads as a unit.</p>
+
+<p>Below the list, a read-only <em>Details</em> field holds the complete text of
+the selected comment. Long comments are truncated in the list but never here, so
+tab to it and read with the arrow keys when a comment does not fit on one line.</p>
+
+<h3>Filtering and sorting</h3>
+
+<ul>
+<li><strong>Filter</strong> — matches on comment text, annotated text and author.
+Multiple words all have to match, so <em>anna typo</em> finds Anna's comments
+mentioning a typo.</li>
+<li><strong>Author</strong> — restrict the list to one reviewer.</li>
+<li><strong>Sort by</strong> — document order (the default), author, date or status.</li>
+<li><strong>Show resolved</strong> — hide comments that have already been resolved.</li>
+</ul>
+
+<h3>Acting on comments</h3>
+
+<p>These buttons let you handle a review without ever entering the comments pane:</p>
+
+<ul>
+<li><strong>Reply</strong> — type a reply in a normal edit field and it is added to the thread.</li>
+<li><strong>Edit</strong> — change the text of an existing comment.</li>
+<li><strong>Resolve / Reopen</strong> — mark a thread as done, or bring it back.</li>
+<li><strong>Delete</strong> — remove a comment, with confirmation.</li>
+<li><strong>Copy</strong> and <strong>Copy all</strong> — put the selected comment,
+or everything currently listed, on the clipboard. <em>Copy all</em> respects the
+filter, so it is an easy way to produce a summary of one reviewer's remarks.</li>
+</ul>
+
+<p>The list refreshes from Word after every change, so it always reflects the
+document.</p>
+
+<h2>Microsoft Excel</h2>
+
+<p>The same commands work in Excel. The list shows every annotation in the whole
+workbook, across all worksheets, with a <em>Sheet</em> and a <em>Cell</em> column;
+<kbd>Enter</kbd> activates that sheet and moves to the cell.</p>
+
+<h3>Two kinds of annotation</h3>
+
+<p>Excel has two, and both appear in the list, told apart by the <em>Type</em>
+column:</p>
+
+<table>
+<caption>What each kind supports</caption>
+<thead>
+<tr><th></th><th>Note</th><th>Comment thread</th></tr>
+</thead>
+<tbody>
+<tr><td>What it is</td><td>The classic yellow sticky note.</td><td>The modern comment, with replies.</td></tr>
+<tr><td>Author</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Date</td><td>No</td><td>Yes</td></tr>
+<tr><td>Replies</td><td>No</td><td>Yes</td></tr>
+<tr><td>Resolving</td><td colspan="2">Not available. See the limitations below.</td></tr>
+</tbody>
+</table>
+
+<p>The <em>Kind</em> combo box filters the list down to one of the two. The
+<em>Reply</em> button is unavailable while a note is selected, because a note has
+no thread to reply to; convert it to a comment in Excel first.</p>
+
+<p>Adding a comment with <kbd>NVDA+control+;</kbd> creates a modern comment thread
+when Excel supports it, and falls back to a classic note when it does not.</p>
+
+<h2>Tracked changes</h2>
+
+<p><kbd>NVDA+control+shift+;</kbd> opens the same kind of list for tracked changes,
+showing the type of change, the author, the affected text, the page and the date.
+<kbd>Enter</kbd> goes to the change; <strong>Accept</strong> and <strong>Reject</strong>
+apply it.</p>
+
+<h2>Settings</h2>
+
+<p>NVDA menu, Preferences, Settings, <em>Comment Commander</em>:</p>
+
+<ul>
+<li><strong>After moving to a comment, announce</strong> — nothing extra, the
+annotated text (the default), the comment, or both.</li>
+<li><strong>Select the annotated text when moving to a comment</strong> — off by
+default, which places the cursor at the start of the annotated text. Turning it on
+selects the whole annotated range instead. Useful for replacing the text outright,
+but remember that anything you type then overwrites the selection.</li>
+<li><strong>Show resolved comments in the list by default</strong>.</li>
+<li><strong>Report page numbers in the list</strong> — the page number is looked
+up for the row you are on rather than for the whole document at once, so this
+costs nothing noticeable even in a long document. Turn it off if you never use
+the Page column.</li>
+<li><strong>Ask for confirmation before deleting a comment</strong>.</li>
+<li><strong>Remember the filter text between sessions</strong>.</li>
+</ul>
+
+<h2>Where the commands work</h2>
+
+<p>All commands are inactive unless Microsoft Word or Microsoft Excel has the
+focus. Pressing one elsewhere reports "Not in a Microsoft Word or Excel document"
+and does nothing else, so the add-on can never act on a document sitting in the
+background while you are working in another application.</p>
+
+<p>Word used as the editor for an Outlook message counts as Word, as long as a
+real document window is present. Opening the add-on's settings is the one command
+that works everywhere.</p>
+
+<h2>Known limitations</h2>
+
+<ul>
+<li>Resolving comments and replying require Word 2013 or later. In older versions
+those buttons are unavailable.</li>
+<li>In a protected or read-only document, Word refuses changes. The add-on reports
+this rather than failing silently.</li>
+<li>Editing the text of a comment replaces the whole body, including any formatting
+it had.</li>
+<li>Excel does not expose whether a comment is resolved, so the add-on cannot show
+or change that. The <em>Resolve</em> button stays unavailable in Excel. Resolving
+still works normally inside Excel itself.</li>
+<li>Excel notes cannot hold replies. That is how Excel works, not a limitation of
+the add-on.</li>
+<li>Excel has no tracked changes comparable to Word's, so that command reports
+that it is a Word feature.</li>
+</ul>
+
+<h2>Licence</h2>
+
+<p>GNU General Public License version 2.</p>
+
+</body>
+</html>

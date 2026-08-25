@@ -1,0 +1,9 @@
+*.nvda-addon
+__pycache__/
+*.pyc
+*.pyo
+addon/manifest.ini
+addon/locale/*/LC_MESSAGES/*.mo
+*.bak
+.vscode/
+.idea/

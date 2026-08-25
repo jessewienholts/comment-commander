@@ -1,0 +1,586 @@
+# Dutch translation of the Comment Commander NVDA add-on.
+# Copyright (C) 2026 Sensotec
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: commentCommander 1.0.0\n"
+"Report-Msgid-Bugs-To: support@sensotec.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addon/globalPlugins/commentCommander/__init__.py:30
+msgid "Comment Commander"
+msgstr "Comment Commander"
+
+#: addon/globalPlugins/commentCommander/__init__.py:185
+msgid "No comments in this document"
+msgstr "Geen opmerkingen in dit document"
+
+#: addon/globalPlugins/commentCommander/__init__.py:86
+msgid "Not in a Microsoft Word or Excel document"
+msgstr "Niet in een Microsoft Word- of Excel-document"
+
+#: addon/globalPlugins/commentCommander/__init__.py:93
+msgid "Tracked changes are only available in Microsoft Word"
+msgstr "Bijgehouden wijzigingen zijn alleen beschikbaar in Microsoft Word"
+
+#: addon/globalPlugins/commentCommander/__init__.py:183
+msgid "No tracked changes in this document"
+msgstr "Geen bijgehouden wijzigingen in dit document"
+
+#: addon/globalPlugins/commentCommander/__init__.py:191
+msgid "Shows a list of all comments in the current Word document or Excel workbook"
+msgstr "Toont een lijst van alle opmerkingen in het huidige Word-document of de huidige Excel-werkmap"
+
+#: addon/globalPlugins/commentCommander/__init__.py:199
+msgid "Shows a list of all tracked changes in the current Microsoft Word document"
+msgstr "Toont een lijst van alle bijgehouden wijzigingen in het huidige Microsoft Word-document"
+
+#: addon/globalPlugins/commentCommander/__init__.py:214
+msgid "Reports the comment at the cursor. Press twice to copy it to the clipboard"
+msgstr "Meldt de opmerking op de cursorpositie. Druk tweemaal om ze naar het klembord te kopiëren"
+
+#: addon/globalPlugins/commentCommander/__init__.py:283
+msgid "Moves to the next comment"
+msgstr "Gaat naar de volgende opmerking"
+
+#: addon/globalPlugins/commentCommander/__init__.py:291
+msgid "Moves to the previous comment"
+msgstr "Gaat naar de vorige opmerking"
+
+#: addon/globalPlugins/commentCommander/__init__.py:309
+msgid "Comment text:"
+msgstr "Tekst van de opmerking:"
+
+#: addon/globalPlugins/commentCommander/__init__.py:299
+msgid "Adds a comment on the current selection or cell"
+msgstr "Voegt een opmerking toe bij de huidige selectie of cel"
+
+#: addon/globalPlugins/commentCommander/__init__.py:338
+msgid "Reports how many comments the document contains"
+msgstr "Meldt hoeveel opmerkingen het document bevat"
+
+#: addon/globalPlugins/commentCommander/__init__.py:369
+msgid "Opens the Comment Commander settings"
+msgstr "Opent de instellingen van Comment Commander"
+
+#: addon/globalPlugins/commentCommander/__init__.py:232
+msgid "No comment here"
+msgstr "Hier staat geen opmerking"
+
+#: addon/globalPlugins/commentCommander/__init__.py:277
+msgid "Could not move to this item"
+msgstr "Kan niet naar dit item navigeren"
+
+#: addon/globalPlugins/commentCommander/__init__.py:332
+msgid "Comment added"
+msgstr "Opmerking toegevoegd"
+
+#: addon/globalPlugins/commentCommander/__init__.py:245
+msgid "Comment copied to clipboard"
+msgstr "Opmerking naar klembord gekopieerd"
+
+#: addon/globalPlugins/commentCommander/__init__.py:248
+msgid "Could not copy to clipboard"
+msgstr "Kopiëren naar klembord mislukt"
+
+#: addon/globalPlugins/commentCommander/__init__.py:270
+msgid "No next comment"
+msgstr "Geen volgende opmerking"
+
+#: addon/globalPlugins/commentCommander/__init__.py:273
+msgid "No previous comment"
+msgstr "Geen vorige opmerking"
+
+#: addon/globalPlugins/commentCommander/__init__.py:314
+msgid "New comment"
+msgstr "Nieuwe opmerking"
+
+#: addon/globalPlugins/commentCommander/__init__.py:362
+msgid "{comments} comments, {resolved} resolved, {revisions} tracked changes"
+msgstr "{comments} opmerkingen, {resolved} opgelost, {revisions} bijgehouden wijzigingen"
+
+#: addon/globalPlugins/commentCommander/__init__.py:350
+msgid "{notes} notes, {threads} comment threads"
+msgstr "{notes} notities, {threads} opmerkingen"
+
+#: addon/globalPlugins/commentCommander/common.py:43
+msgid "Insertion"
+msgstr "Invoeging"
+
+#: addon/globalPlugins/commentCommander/common.py:45
+msgid "Deletion"
+msgstr "Verwijdering"
+
+#: addon/globalPlugins/commentCommander/common.py:47
+msgid "Formatting"
+msgstr "Opmaak"
+
+#: addon/globalPlugins/commentCommander/common.py:49
+msgid "Paragraph number"
+msgstr "Alineanummer"
+
+#: addon/globalPlugins/commentCommander/common.py:51
+msgid "Displayed field"
+msgstr "Weergegeven veld"
+
+#: addon/globalPlugins/commentCommander/common.py:53
+msgid "Reconcile"
+msgstr "Samenvoegen"
+
+#: addon/globalPlugins/commentCommander/common.py:55
+msgid "Conflict"
+msgstr "Conflict"
+
+#: addon/globalPlugins/commentCommander/common.py:57
+msgid "Style"
+msgstr "Stijl"
+
+#: addon/globalPlugins/commentCommander/common.py:59
+msgid "Replacement"
+msgstr "Vervanging"
+
+#: addon/globalPlugins/commentCommander/common.py:61
+msgid "Paragraph property"
+msgstr "Alinea-eigenschap"
+
+#: addon/globalPlugins/commentCommander/common.py:63
+msgid "Table property"
+msgstr "Tabeleigenschap"
+
+#: addon/globalPlugins/commentCommander/common.py:65
+msgid "Section property"
+msgstr "Sectie-eigenschap"
+
+#: addon/globalPlugins/commentCommander/common.py:67
+msgid "Style definition"
+msgstr "Stijldefinitie"
+
+#: addon/globalPlugins/commentCommander/common.py:69
+msgid "Moved from"
+msgstr "Verplaatst van"
+
+#: addon/globalPlugins/commentCommander/common.py:71
+msgid "Moved to"
+msgstr "Verplaatst naar"
+
+#: addon/globalPlugins/commentCommander/common.py:73
+msgid "Cell insertion"
+msgstr "Celinvoeging"
+
+#: addon/globalPlugins/commentCommander/common.py:75
+msgid "Cell deletion"
+msgstr "Celverwijdering"
+
+#: addon/globalPlugins/commentCommander/common.py:77
+msgid "Cell merge"
+msgstr "Cellen samenvoegen"
+
+#: addon/globalPlugins/commentCommander/common.py:273
+msgid "Open"
+msgstr "Open"
+
+#: addon/globalPlugins/commentCommander/common.py:271
+msgid "Resolved"
+msgstr "Opgelost"
+
+#: addon/globalPlugins/commentCommander/common.py:279
+msgid "Note"
+msgstr "Notitie"
+
+#: addon/globalPlugins/commentCommander/common.py:282
+msgid "Comment thread"
+msgstr "Opmerking"
+
+#: addon/globalPlugins/commentCommander/common.py:326
+msgid "Unknown change"
+msgstr "Onbekende wijziging"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:33
+msgid "All authors"
+msgstr "Alle auteurs"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:105
+msgid "&Filter by text or author:"
+msgstr "&Filteren op tekst of auteur:"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:128
+msgid "&Details:"
+msgstr "&Details:"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:448
+msgid "Co&mments:"
+msgstr "Op&merkingen:"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:596
+msgid "Show &resolved"
+msgstr "Opgeloste &tonen"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:765
+msgid "Tracked &changes:"
+msgstr "Bijgehouden &wijzigingen:"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:65
+msgid "resolved"
+msgstr "opgelost"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:139
+msgid "&Author:"
+msgstr "&Auteur:"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:145
+msgid "&Sort by:"
+msgstr "&Sorteren op:"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:203
+msgid "Document order"
+msgstr "Documentvolgorde"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:205
+msgid "Author"
+msgstr "Auteur"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:207
+msgid "Date"
+msgstr "Datum"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:53
+msgid "Reply"
+msgstr "Antwoord"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:156
+msgid "&Go to"
+msgstr "&Ga naar"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:161
+msgid "&Copy"
+msgstr "&Kopiëren"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:164
+msgid "Copy a&ll"
+msgstr "A&lles kopiëren"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:167
+msgid "Cl&ose"
+msgstr "Sl&uiten"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:229
+msgid "Showing {shown} of {total}"
+msgstr "{shown} van {total} weergegeven"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:408
+msgid "Copied to clipboard"
+msgstr "Naar klembord gekopieerd"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:441
+msgid "Comments in {name}"
+msgstr "Opmerkingen in {name}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:474
+msgid "#"
+msgstr "Nr."
+
+#: addon/globalPlugins/commentCommander/dialogs.py:478
+msgid "Comment"
+msgstr "Opmerking"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:480
+msgid "Annotated text"
+msgstr "Tekst met opmerking"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:482
+msgid "Status"
+msgstr "Status"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:484
+msgid "Replies"
+msgstr "Antwoorden"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:486
+msgid "Page"
+msgstr "Pagina"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:581
+msgid "&Kind:"
+msgstr "&Soort:"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:617
+msgid "&Reply..."
+msgstr "&Antwoorden..."
+
+#: addon/globalPlugins/commentCommander/dialogs.py:620
+msgid "&Edit..."
+msgstr "B&ewerken..."
+
+#: addon/globalPlugins/commentCommander/dialogs.py:623
+msgid "Resol&ve"
+msgstr "Op&lossen"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:626
+msgid "&Delete"
+msgstr "&Verwijderen"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:640
+msgid "Reopen"
+msgstr "Heropenen"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:656
+msgid "{shown} shown, {total} comments, {resolved} resolved"
+msgstr "{shown} weergegeven, {total} opmerkingen, {resolved} opgelost"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:677
+msgid "Reply to the comment by {author}:"
+msgstr "Antwoord op de opmerking van {author}:"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:701
+msgid "Edit comment"
+msgstr "Opmerking bewerken"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:758
+msgid "Tracked changes in {name}"
+msgstr "Bijgehouden wijzigingen in {name}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:772
+msgid "Type"
+msgstr "Type"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:776
+msgid "Text"
+msgstr "Tekst"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:828
+msgid "&Accept"
+msgstr "&Accepteren"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:831
+msgid "Re&ject"
+msgstr "Ve&rwerpen"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:59
+msgid "by {author}"
+msgstr "van {author}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:62
+msgid "on {date}"
+msgstr "op {date}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:69
+msgid "{count} reply"
+msgid_plural "{count} replies"
+msgstr[0] "{count} antwoord"
+msgstr[1] "{count} antwoorden"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:76
+msgid "Annotated text: {text}"
+msgstr "Tekst met opmerking: {text}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:442
+msgid "this document"
+msgstr "dit document"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:456
+msgid "Sheet"
+msgstr "Blad"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:458
+msgid "Cell"
+msgstr "Cel"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:466
+msgid "Cell text"
+msgstr "Celinhoud"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:494
+msgid "reply {number}"
+msgstr "antwoord {number}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:554
+msgid "Comment: {text}"
+msgstr "Opmerking: {text}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:561
+msgid "Sheet and cell"
+msgstr "Blad en cel"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:651
+msgid "{shown} shown, {notes} notes, {threads} comment threads"
+msgstr "{shown} weergegeven, {notes} notities, {threads} opmerkingen"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:732
+msgid "Delete the comment by {author}?\n\n{text}"
+msgstr "De opmerking van {author} verwijderen?\n\n{text}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:736
+msgid "Delete comment"
+msgstr "Opmerking verwijderen"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:797
+msgid "Type: {type}"
+msgstr "Type: {type}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:536
+msgid "Author: {author}"
+msgstr "Auteur: {author}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:539
+msgid "Date: {date}"
+msgstr "Datum: {date}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:542
+msgid "Page: {page}"
+msgstr "Pagina: {page}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:545
+msgid "Status: {status}"
+msgstr "Status: {status}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:585
+msgid "All kinds"
+msgstr "Alle soorten"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:587
+msgid "Notes"
+msgstr "Notities"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:589
+msgid "Comment threads"
+msgstr "Opmerkingen"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:809
+msgid "Formatting: {description}"
+msgstr "Opmaak: {description}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:812
+msgid "Text: {text}"
+msgstr "Tekst: {text}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:527
+msgid "Sheet: {sheet}"
+msgstr "Blad: {sheet}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:530
+msgid "Cell: {cell}"
+msgstr "Cel: {cell}"
+
+#: addon/globalPlugins/commentCommander/dialogs.py:549
+msgid "Cell text: {text}"
+msgstr "Celinhoud: {text}"
+
+#: addon/globalPlugins/commentCommander/excelAccess.py:510
+msgid "Excel does not allow comments to be resolved from outside the application."
+msgstr "Excel staat niet toe opmerkingen van buiten de toepassing op te lossen."
+
+#: addon/globalPlugins/commentCommander/excelAccess.py:548
+msgid "Excel could not add a comment here. The sheet may be protected, or the cell already has one."
+msgstr "Excel kon hier geen opmerking toevoegen. Het blad is mogelijk beveiligd, of de cel heeft er al een."
+
+#: addon/globalPlugins/commentCommander/excelAccess.py:555
+msgid "Microsoft Excel does not support tracked changes in the way Word does."
+msgstr "Microsoft Excel ondersteunt bijgehouden wijzigingen niet op de manier waarop Word dat doet."
+
+#: addon/globalPlugins/commentCommander/excelAccess.py:476
+msgid "Notes cannot have replies. Convert it to a comment in Excel first."
+msgstr "Notities kunnen geen antwoorden bevatten. Zet ze in Excel eerst om naar een opmerking."
+
+#: addon/globalPlugins/commentCommander/excelAccess.py:530
+msgid "The active cell in Excel could not be determined."
+msgstr "De actieve cel in Excel kon niet worden bepaald."
+
+#: addon/globalPlugins/commentCommander/excelAccess.py:370
+msgid "The comments in this workbook could not be read."
+msgstr "De opmerkingen in deze werkmap konden niet worden gelezen."
+
+#: addon/globalPlugins/commentCommander/excelAccess.py:488
+msgid "Excel could not add this reply. The sheet may be protected."
+msgstr "Excel kon dit antwoord niet toevoegen. Het blad is mogelijk beveiligd."
+
+#: addon/globalPlugins/commentCommander/excelAccess.py:502
+msgid "Excel could not change this comment. The sheet may be protected."
+msgstr "Excel kon deze opmerking niet wijzigen. Het blad is mogelijk beveiligd."
+
+#: addon/globalPlugins/commentCommander/excelAccess.py:520
+msgid "Excel could not delete this item. The sheet may be protected."
+msgstr "Excel kon dit item niet verwijderen. Het blad is mogelijk beveiligd."
+
+#: addon/globalPlugins/commentCommander/settings.py:50
+msgid "After moving to a comment, &announce:"
+msgstr "Na het navigeren naar een opmerking, &meld:"
+
+#: addon/globalPlugins/commentCommander/settings.py:70
+msgid "&Select the annotated text when moving to a comment"
+msgstr "Tekst met opmerking &selecteren bij het navigeren"
+
+#: addon/globalPlugins/commentCommander/settings.py:75
+msgid "Show &resolved comments in the list by default"
+msgstr "Opgeloste opmerkingen standaard in de lijst &tonen"
+
+#: addon/globalPlugins/commentCommander/settings.py:80
+msgid "Report &page numbers in the list"
+msgstr "&Paginanummers in de lijst melden"
+
+#: addon/globalPlugins/commentCommander/settings.py:85
+msgid "Ask for &confirmation before deleting a comment"
+msgstr "Om be&vestiging vragen voor het verwijderen van een opmerking"
+
+#: addon/globalPlugins/commentCommander/settings.py:90
+msgid "Re&member the filter text between sessions"
+msgstr "Filtertekst ont&houden tussen sessies"
+
+#: addon/globalPlugins/commentCommander/settings.py:53
+msgid "Nothing extra"
+msgstr "Niets extra"
+
+#: addon/globalPlugins/commentCommander/settings.py:55
+msgid "The annotated text"
+msgstr "De tekst met opmerking"
+
+#: addon/globalPlugins/commentCommander/settings.py:57
+msgid "The comment"
+msgstr "De opmerking"
+
+#: addon/globalPlugins/commentCommander/settings.py:59
+msgid "The annotated text and the comment"
+msgstr "De tekst met opmerking en de opmerking"
+
+#: addon/globalPlugins/commentCommander/wordAccess.py:512
+msgid "Word could not add this reply. The document may be protected, or replies may not be supported here."
+msgstr "Word kon dit antwoord niet toevoegen. Het document is mogelijk beveiligd, of antwoorden worden hier niet ondersteund."
+
+#: addon/globalPlugins/commentCommander/wordAccess.py:575
+msgid "The cursor position in Word could not be determined."
+msgstr "De cursorpositie in Word kon niet worden bepaald."
+
+#: addon/globalPlugins/commentCommander/wordAccess.py:242
+msgid "The comments in this document could not be read."
+msgstr "De opmerkingen in dit document konden niet worden gelezen."
+
+#: addon/globalPlugins/commentCommander/wordAccess.py:343
+msgid "The tracked changes in this document could not be read."
+msgstr "De bijgehouden wijzigingen in dit document konden niet worden gelezen."
+
+#: addon/globalPlugins/commentCommander/wordAccess.py:523
+msgid "Word could not change this comment. The document may be protected."
+msgstr "Word kon deze opmerking niet wijzigen. Het document is mogelijk beveiligd."
+
+#: addon/globalPlugins/commentCommander/wordAccess.py:534
+msgid "Word could not change the status of this comment. Your version of Word may not support resolving comments."
+msgstr "Word kon de status van deze opmerking niet wijzigen. Uw versie van Word ondersteunt het oplossen van opmerkingen mogelijk niet."
+
+#: addon/globalPlugins/commentCommander/wordAccess.py:545
+msgid "Word could not delete this item. The document may be protected."
+msgstr "Word kon dit item niet verwijderen. Het document is mogelijk beveiligd."
+
+#: addon/globalPlugins/commentCommander/wordAccess.py:555
+msgid "Word could not accept this change. The document may be protected."
+msgstr "Word kon deze wijziging niet accepteren. Het document is mogelijk beveiligd."
+
+#: addon/globalPlugins/commentCommander/wordAccess.py:565
+msgid "Word could not reject this change. The document may be protected."
+msgstr "Word kon deze wijziging niet verwerpen. Het document is mogelijk beveiligd."
+
+#: addon/globalPlugins/commentCommander/wordAccess.py:583
+msgid "Word could not add a comment here. The document may be protected."
+msgstr "Word kon hier geen opmerking toevoegen. Het document is mogelijk beveiligd."

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Comment Commander</title>
+<style>
+body { font-family: Segoe UI, Verdana, sans-serif; margin: 2em auto; max-width: 50em; line-height: 1.5; padding: 0 1em; }
+table { border-collapse: collapse; margin: 1em 0; width: 100%; }
+th, td { border: 1px solid #888; padding: 0.4em 0.6em; text-align: left; vertical-align: top; }
+th { background: #eee; }
+kbd { border: 1px solid #999; border-radius: 3px; padding: 0 0.3em; background: #f6f6f6; }
+</style>
+</head>
+<body>
+<h1>Comment Commander</h1>
+
+<p>Comment Commander laat u snel met opmerkingen in Microsoft Word en Excel werken
+met NVDA. In plaats van door het deelvenster Opmerkingen te zoeken, krijgt u een
+doorzoekbare lijst van alle opmerkingen, en met één toetsaanslag springt u naar de
+plek waar de opmerking bij hoort.</p>
+
+<p>In Excel staan beide soorten aantekeningen in dezelfde lijst. Bijgehouden
+wijzigingen in Word werken op dezelfde manier.</p>
+
+<h2>Vereisten</h2>
+<ul>
+<li>NVDA 2023.1 of hoger.</li>
+<li>Microsoft Word of Microsoft Excel (desktop). Word 2016 of hoger wordt
+aanbevolen; opmerkingen oplossen en beantwoorden vereist Word 2013 of hoger.
+Opmerkingen met antwoorden in Excel vereisen Excel 2019 of Microsoft 365;
+klassieke notities werken in elke versie.</li>
+</ul>
+
+<h2>Commando's</h2>
+
+<table>
+<caption>Standaard sneltoetsen</caption>
+<thead>
+<tr><th>Sneltoets</th><th>Actie</th></tr>
+</thead>
+<tbody>
+<tr><td><kbd>NVDA+shift+;</kbd></td><td>Opent de lijst met opmerkingen.</td></tr>
+<tr><td><kbd>NVDA+;</kbd></td><td>Meldt eerst de opmerking op de cursorpositie en daarna de tekst waar ze bij hoort. Tweemaal drukken kopieert ze naar het klembord.</td></tr>
+<tr><td><kbd>NVDA+alt+;</kbd></td><td>Gaat naar de volgende opmerking.</td></tr>
+<tr><td><kbd>NVDA+alt+shift+;</kbd></td><td>Gaat naar de vorige opmerking.</td></tr>
+<tr><td><kbd>NVDA+control+;</kbd></td><td>Voegt een opmerking toe bij de huidige selectie, of bij de actieve cel in Excel.</td></tr>
+<tr><td><kbd>NVDA+control+shift+;</kbd></td><td>Opent de lijst met bijgehouden wijzigingen. Alleen in Word.</td></tr>
+<tr><td>Niet toegewezen</td><td>Meldt hoeveel opmerkingen en wijzigingen het document bevat.</td></tr>
+<tr><td>Niet toegewezen</td><td>Opent de instellingen van Comment Commander.</td></tr>
+</tbody>
+</table>
+
+<p>Alle commando's zijn aanpasbaar via het dialoogvenster Invoerhandelingen van
+NVDA, in de categorie <em>Comment Commander</em>.</p>
+
+<h3>Let op bij andere toetsenbordindelingen</h3>
+
+<p>NVDA leidt uit uw actieve toetsenbordindeling af op welke fysieke toets de
+puntkomma zit, maar houdt daarbij alleen de toets zelf aan en niet de shift die de
+indeling nodig heeft om dat teken te maken. Welke toets u dus werkelijk indrukt,
+hangt af van uw indeling:</p>
+
+<table>
+<caption>Waar de puntkomma-toets terechtkomt</caption>
+<thead>
+<tr><th>Indeling</th><th>Fysieke toets</th></tr>
+</thead>
+<tbody>
+<tr><td>VS, VS Internationaal</td><td>De puntkomma-toets, zoals opgedrukt.</td></tr>
+<tr><td>Belgisch (punt) en Belgisch Frans AZERTY</td><td>De puntkomma-toets, zoals opgedrukt.</td></tr>
+<tr><td>Nederlands (Nederland)</td><td>De komma-toets, omdat de puntkomma daar op shift+komma zit. <kbd>NVDA+shift+;</kbd> is dus <kbd>NVDA+shift+komma</kbd>, precies wat u ook zou indrukken om een puntkomma te typen. <kbd>NVDA+;</kbd> is <kbd>NVDA+komma</kbd>.</td></tr>
+</tbody>
+</table>
+
+<p>Alle zes commando's blijven op elk van deze indelingen van elkaar te
+onderscheiden, dus er treedt geen conflict op. Heeft uw indeling helemaal geen
+puntkomma, of wilt u gewoon andere toetsen, wijs die dan toe via
+Invoerhandelingen; de rest werkt precies hetzelfde.</p>
+
+<h2>De lijst met opmerkingen</h2>
+
+<p>Druk op <kbd>NVDA+shift+;</kbd> in een Word-document. Het dialoogvenster opent
+met de focus in het filterveld, dus de snelste route naar een opmerking is: typ
+een paar woorden, druk op <kbd>pijl omlaag</kbd> om in de lijst te komen, en dan
+<kbd>Enter</kbd>.</p>
+
+<p><kbd>Enter</kbd> op een opmerking sluit het venster en zet de Word-cursor aan
+het begin van de tekst waar de opmerking bij hoort, klaar om te lezen of te
+bewerken.</p>
+
+<h3>Toetsen in het dialoogvenster</h3>
+
+<table>
+<caption>Toetsen in de lijstvensters</caption>
+<thead>
+<tr><th>Toets</th><th>Actie</th></tr>
+</thead>
+<tbody>
+<tr><td><kbd>Enter</kbd></td><td>Naar de opmerking gaan en het venster sluiten.</td></tr>
+<tr><td><kbd>pijl omlaag</kbd> in het filterveld</td><td>Naar de lijst gaan.</td></tr>
+<tr><td><kbd>Backspace</kbd> in de lijst</td><td>Terug naar het filterveld en het laatste teken wissen.</td></tr>
+<tr><td><kbd>Delete</kbd> in de lijst</td><td>De geselecteerde opmerking verwijderen (verwerpen in de lijst met wijzigingen).</td></tr>
+<tr><td><kbd>F2</kbd> in de lijst</td><td>De tekst van de geselecteerde opmerking bewerken.</td></tr>
+<tr><td><kbd>Escape</kbd></td><td>Sluiten zonder te navigeren.</td></tr>
+</tbody>
+</table>
+
+<h3>Wat de lijst toont</h3>
+
+<p>Elke rij toont het nummer, de auteur, de tekst van de opmerking, de tekst
+waarop ze slaat, de status, het aantal antwoorden, de pagina en de datum.
+Antwoorden staan direct onder de opmerking waar ze bij horen en zijn als antwoord
+aangeduid, zodat een gesprek als één geheel leest.</p>
+
+<p>Onder de lijst staat een alleen-lezen veld <em>Details</em> met de volledige
+tekst van de geselecteerde opmerking. Lange opmerkingen worden in de lijst afgekort,
+maar hier nooit; ga er met Tab naartoe en lees met de pijltoetsen wanneer een
+opmerking niet op één regel past.</p>
+
+<h3>Filteren en sorteren</h3>
+
+<ul>
+<li><strong>Filteren</strong> — zoekt in de tekst van de opmerking, de tekst waarop
+ze slaat en de auteur. Alle woorden moeten voorkomen, dus <em>anna typfout</em>
+vindt de opmerkingen van Anna over een typfout.</li>
+<li><strong>Auteur</strong> — beperkt de lijst tot één beoordelaar.</li>
+<li><strong>Sorteren op</strong> — documentvolgorde (standaard), auteur, datum of status.</li>
+<li><strong>Opgeloste tonen</strong> — verbergt opmerkingen die al opgelost zijn.</li>
+</ul>
+
+<h3>Opmerkingen bewerken</h3>
+
+<p>Met deze knoppen handelt u een revisieronde af zonder ooit het deelvenster
+Opmerkingen te openen:</p>
+
+<ul>
+<li><strong>Antwoorden</strong> — typ een antwoord in een gewoon invoerveld; het wordt aan het gesprek toegevoegd.</li>
+<li><strong>Bewerken</strong> — wijzigt de tekst van een bestaande opmerking.</li>
+<li><strong>Oplossen / Heropenen</strong> — markeert een gesprek als afgehandeld, of maakt het weer open.</li>
+<li><strong>Verwijderen</strong> — verwijdert een opmerking, met bevestiging.</li>
+<li><strong>Kopiëren</strong> en <strong>Alles kopiëren</strong> — zet de
+geselecteerde opmerking, of alles wat op dat moment in de lijst staat, op het
+klembord. <em>Alles kopiëren</em> volgt het filter, dus dat is een makkelijke
+manier om een overzicht van de opmerkingen van één beoordelaar te maken.</li>
+</ul>
+
+<p>De lijst wordt na elke wijziging opnieuw uit Word gelezen en komt dus altijd
+overeen met het document.</p>
+
+<h2>Microsoft Excel</h2>
+
+<p>Dezelfde commando's werken in Excel. De lijst toont alle aantekeningen in de
+hele werkmap, over alle werkbladen heen, met een kolom <em>Blad</em> en een kolom
+<em>Cel</em>. <kbd>Enter</kbd> activeert dat blad en gaat naar de cel.</p>
+
+<h3>Twee soorten aantekeningen</h3>
+
+<p>Excel kent er twee, en beide staan in de lijst, uit elkaar gehouden door de
+kolom <em>Type</em>:</p>
+
+<table>
+<caption>Wat elke soort ondersteunt</caption>
+<thead>
+<tr><th></th><th>Notitie</th><th>Opmerking</th></tr>
+</thead>
+<tbody>
+<tr><td>Wat het is</td><td>De klassieke gele memo.</td><td>De moderne opmerking, met antwoorden.</td></tr>
+<tr><td>Auteur</td><td>Ja</td><td>Ja</td></tr>
+<tr><td>Datum</td><td>Nee</td><td>Ja</td></tr>
+<tr><td>Antwoorden</td><td>Nee</td><td>Ja</td></tr>
+<tr><td>Oplossen</td><td colspan="2">Niet beschikbaar. Zie de beperkingen hieronder.</td></tr>
+</tbody>
+</table>
+
+<p>De keuzelijst <em>Soort</em> beperkt de lijst tot één van beide. De knop
+<em>Antwoorden</em> is niet beschikbaar zolang een notitie geselecteerd is, want
+een notitie heeft geen gesprek om op te antwoorden; zet ze in Excel eerst om naar
+een opmerking.</p>
+
+<p>Een opmerking toevoegen met <kbd>NVDA+control+;</kbd> maakt een moderne
+opmerking wanneer Excel dat ondersteunt, en valt anders terug op een klassieke
+notitie.</p>
+
+<h2>Bijgehouden wijzigingen</h2>
+
+<p><kbd>NVDA+control+shift+;</kbd> opent hetzelfde soort lijst voor bijgehouden
+wijzigingen, met het type wijziging, de auteur, de betrokken tekst, de pagina en
+de datum. <kbd>Enter</kbd> gaat naar de wijziging; <strong>Accepteren</strong> en
+<strong>Verwerpen</strong> passen ze toe.</p>
+
+<h2>Instellingen</h2>
+
+<p>NVDA-menu, Opties, Instellingen, <em>Comment Commander</em>:</p>
+
+<ul>
+<li><strong>Na het navigeren naar een opmerking, meld</strong> — niets extra, de
+tekst met opmerking (standaard), de opmerking, of beide.</li>
+<li><strong>Tekst met opmerking selecteren bij het navigeren</strong> — standaard
+uit, waardoor de cursor aan het begin van de betrokken tekst komt te staan. Aan
+zetten selecteert het hele bereik. Handig om de tekst meteen te vervangen, maar
+let op: wat u dan typt overschrijft de selectie.</li>
+<li><strong>Opgeloste opmerkingen standaard in de lijst tonen</strong>.</li>
+<li><strong>Paginanummers in de lijst melden</strong> — het paginanummer wordt
+opgezocht voor de rij waar u op staat en niet voor het hele document tegelijk,
+dus dit kost ook in een lang document geen merkbare tijd. Zet het uit als u de
+kolom Pagina toch nooit gebruikt.</li>
+<li><strong>Om bevestiging vragen voor het verwijderen van een opmerking</strong>.</li>
+<li><strong>Filtertekst onthouden tussen sessies</strong>.</li>
+</ul>
+
+<h2>Waar de commando's werken</h2>
+
+<p>Alle commando's zijn inactief tenzij Microsoft Word of Microsoft Excel de focus
+heeft. Drukt u er elders op, dan meldt de add-on "Niet in een Microsoft Word- of
+Excel-document" en gebeurt er verder niets. De add-on kan dus nooit iets doen met
+een document dat op de achtergrond openstaat terwijl u in een andere toepassing
+werkt.</p>
+
+<p>Word als editor van een Outlook-bericht telt als Word, zolang er een echt
+documentvenster aanwezig is. De instellingen openen is het enige commando dat
+overal werkt.</p>
+
+<h2>Bekende beperkingen</h2>
+
+<ul>
+<li>Opmerkingen oplossen en beantwoorden vereist Word 2013 of hoger. In oudere
+versies zijn die knoppen niet beschikbaar.</li>
+<li>In een beveiligd of alleen-lezen document weigert Word wijzigingen. De add-on
+meldt dat in plaats van stilzwijgend te falen.</li>
+<li>Het bewerken van de tekst van een opmerking vervangt de volledige inhoud,
+inclusief de opmaak die ze had.</li>
+<li>Excel stelt niet beschikbaar of een opmerking is opgelost, dus de add-on kan
+dat niet tonen of wijzigen. De knop <em>Oplossen</em> blijft in Excel
+uitgeschakeld. Oplossen werkt gewoon binnen Excel zelf.</li>
+<li>Notities in Excel kunnen geen antwoorden bevatten. Zo werkt Excel; het is geen
+beperking van de add-on.</li>
+<li>Excel kent geen bijgehouden wijzigingen die vergelijkbaar zijn met die van
+Word, dus dat commando meldt dat het een Word-functie is.</li>
+</ul>
+
+<h2>Licentie</h2>
+
+<p>GNU General Public License versie 2.</p>
+
+</body>
+</html>
